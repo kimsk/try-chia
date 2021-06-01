@@ -25,8 +25,12 @@ Wallet will solve the puzzle of the old coin for the payer and create a new coin
 All coins have an **amount, a puzzle hash, and parent coin info**. Coinbase coins also have a signature.
 
 - Amount - Specifies how much Chia the coin is worth.
-- Puzzle hash - Hash of the puzzle contained within the coin. In order to spend the coin you need to reveal the puzzle and provide the correct solution.
-- Parent coin info - For coinbase coins this is the hex value of the height. For transaction fees coins it is the height of the block hashed twice.
+- Puzzle hash
+    - A program, called the puzzle, which controls how the coin can be spent.
+    - Hash of the puzzle contained within the coin. In order to spend the coin you need to reveal the puzzle and provide the correct solution.
+- Parent coin info
+    - A reference to its parent so you know where the coin come from.
+    - For coinbase coins this is the hex value of the height. For transaction fees coins it is the height of the block hashed twice.
 - Signature - Can be used to prove the authenticity of the coin.
 
 
@@ -34,6 +38,24 @@ All coins have an **amount, a puzzle hash, and parent coin info**. Coinbase coin
 # [ChiaLisp](https://chialisp.com/)
 
 - [Decentralized Identity in ChiaLisp - A Talk with Urbana-Champaign Blockchain Group (17/07/20)](https://youtu.be/cee9O4ZEPjo)
+- [ChiaLisp - what is it good for?](https://www.reddit.com/r/chia/comments/mkbx74/chialisp_what_is_it_good_for/?utm_source=share&utm_medium=web2x&context=3)
 
-# Coloured Coins
+
+# [Coloured Coins](https://www.chia.net/2020/04/29/coloured-coins-launch.en.html)
+Coloured coins are a special set of coins that can be created using chia coins.
+
+Unique identifier -- called the colour.
+
+## Use Cases
+- build new cryptocurrencies on top of chia (similar to ERC-20)
+- tie to another crypto (e.g. btc), real world, or financial assets
+- chips in virtual casinos
+
 > The first Chialisp smart transaction that we integrated into chia-blockchain were Coloured Coins. We will be integrating additional smart transactions and wallets into chia-blockchain in most releases.
+
+- [Chia Coloured Coins - A Non-technical User Guide](https://www.youtube.com/watch?v=YOlpmCBK8zY)
+- [Chia Coloured Coins: Technical Guide (Part 1) - Smart Transactions and ChiaLisp](https://www.youtube.com/watch?v=17pa2t_FQQM)
+- [Chia Coloured Coins: Technical Guide (Part 2) - The Coloured Coins Contract & Offers](https://www.youtube.com/watch?v=P33gWX4WmEQ)
+
+
+# CLVM

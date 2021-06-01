@@ -1,7 +1,6 @@
 # Basic
 - [What is Chia?](https://dukedog.io/blog/what-is-chia/)
-- [Chia Farming Explained (Layman's Terms)](https://www.youtube.com/watch?v=6nITGo_ydHA)
-- [Chia Coloured Coins - A Non-technical User Guide](https://www.youtube.com/watch?v=YOlpmCBK8zY)
+- [5 Takeaways From Chia Network’s New White Paper](https://www.coindesk.com/5-takeaways-from-chia-networks-new-white-paper)
 - [FAQ](https://www.chia.net/faq/)
 
 # Securities
@@ -26,6 +25,7 @@
 # Pooling
 - [Pooling FAQ](https://github.com/Chia-Network/chia-blockchain/wiki/Pooling-FAQ)
 - [Milk Tea Pool](https://milkteapool.com/)
+- [CATFARMER.ME](https://catfarmer.me/)
 
 # Communities
 - [Chia Forum](https://chiaforum.com/)

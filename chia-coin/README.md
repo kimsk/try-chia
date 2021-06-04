@@ -24,10 +24,41 @@ Wallet will solve the puzzle of the old coin for the payer and create a new coin
 ## Coins in the Chia blockchain
 All coins have an **amount, a puzzle hash, and parent coin info**. Coinbase coins also have a signature.
 
+[coin.py](https://github.com/Chia-Network/chia-blockchain/blob/main/chia/types/blockchain_format/coin.py#L13)
+``` python
+class Coin(Streamable):
+    """
+    This structure is used in the body for the reward and fees genesis coins.
+    """
+
+    parent_coin_info: bytes32
+    puzzle_hash: bytes32
+    amount: uint64
+...
+```
+
 - Amount - Specifies how much Chia the coin is worth.
 - Puzzle hash
     - A program, called the puzzle, which controls how the coin can be spent.
+    - Puzzlehash is a hash of a ChiaLisp program.
+    - ChiaLisp programs can be modelled as trees, so we can hash them using Merkle trees and the Merkle root is the puzzlehash we use in the coin.
     - Hash of the puzzle contained within the coin. In order to spend the coin you need to reveal the puzzle and provide the correct solution.
+
+    ### How do chialisp puzzles affect coins?
+    - When you try to spend a coin you send a reveal of its puzzle, a solution, and optionally an aggregated signature.
+    - If the program rejects the solution then the spend is not valid.
+    - Otherwise the program will return some opcodes to the blockchain.
+    - Opcodes are either:
+        - This transaction is only valid if X
+        - If this transaction is valid then X
+    ### Standard Transaction
+    - Puzzle should ensure that only the owner can spend the coin
+    - Puzzle should ensure that we create a new coin which is locked up for the next owner
+    - So it should return the following to the network
+
+``` lisp
+((AGG_SIG ownerpubkey) (CREATE_COIN new_puzzle))
+```
 - Parent coin info
     - A reference to its parent so you know where the coin come from.
     - For coinbase coins this is the hex value of the height. For transaction fees coins it is the height of the block hashed twice.

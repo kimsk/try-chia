@@ -17,3 +17,8 @@ chia wallet show
 # Testnet7
 [faucet](https://chia-faucet.com)
 
+```
+export CHIA_ROOT="~/.chia/testnet7"
+chia init
+chia configure -t true
+```

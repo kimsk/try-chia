@@ -13,3 +13,7 @@ chia init
 chia configure -t true
 chia wallet show
 ```
+
+# Testnet7
+[faucet](https://chia-faucet.com)
+

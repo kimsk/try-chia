@@ -1,9 +1,22 @@
 # [Chia coins](https://www.chiaexplorer.com/chia-coins)
 
+## UTXO (Unspent Transaction Output)
+- [UTXO (Unspent Transaction Output) and Account Model Comparison v. 2](https://medium.com/hackernoon/utxo-and-account-model-comparison-v-2-cdf9669c6c0d)
+
 ## Chia Coin
-Coins are locked by a **puzzle**, which is a program that takes an input solution.
+Coins are locked by a **puzzle**, which is a program written in CLVM that takes an input solution.
+
+**The network has no concept of coin ownership, anybody can attempt to spend any coin on the network.**
 
 **If you provide the right solution to the puzzle you can spend the coin.**
+
+To spend a coin you need 3 pieces of information (and an optional 4th).
+
+- The coin's ID
+`coinID == sha256(parent_ID + puzzlehash + amount)`
+- The full source of the coin's puzzle
+- A solution to the coin's puzzle
+- (OPTIONAL) A collection of signatures grouped together, called an aggregated signature
 
 When a coin is spent it is destroyed and it's value is transferred into new coins.
 
@@ -65,8 +78,11 @@ class Coin(Streamable):
 - Signature - Can be used to prove the authenticity of the coin.
 
 
+# [CLVM (Contract Language Virtual Machine or Chia Lisp Virtual Machine)](https://github.com/Chia-Network/clvm/blob/main/docs/clvm.org)
+CLVM is the compiled, minimal version of ChiaLisp.
 
 # [ChiaLisp](https://chialisp.com/)
+> The high level language is a superset of clvm, adding several operators.
 
 - [Decentralized Identity in ChiaLisp - A Talk with Urbana-Champaign Blockchain Group (17/07/20)](https://youtu.be/cee9O4ZEPjo)
 - [ChiaLisp - what is it good for?](https://www.reddit.com/r/chia/comments/mkbx74/chialisp_what_is_it_good_for/?utm_source=share&utm_medium=web2x&context=3)
@@ -88,5 +104,3 @@ Unique identifier -- called the colour.
 - [Chia Coloured Coins: Technical Guide (Part 1) - Smart Transactions and ChiaLisp](https://www.youtube.com/watch?v=17pa2t_FQQM)
 - [Chia Coloured Coins: Technical Guide (Part 2) - The Coloured Coins Contract & Offers](https://www.youtube.com/watch?v=P33gWX4WmEQ)
 
-
-# CLVM

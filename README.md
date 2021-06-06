@@ -2,6 +2,7 @@
 - [What is Chia?](https://dukedog.io/blog/what-is-chia/)
 - [5 Takeaways From Chia Network’s New White Paper](https://www.coindesk.com/5-takeaways-from-chia-networks-new-white-paper)
 - [FAQ](https://www.chia.net/faq/)
+- [MoFi -- 2021-3-17 -- Kevin Rose](https://www.modern.finance/chia-a-new-cryptocurrency-launching-soon-built-by-bram-cohen-founder-of-bittorrent/)
 
 # Securities
 - [Securing Your Chia - How to Be a Hard Target](https://www.chia.net/2021/05/28/securing-your-chia-how-to-be-a-hard-target.en.html)

@@ -76,3 +76,5 @@ class Coin(Streamable):
     - For coinbase coins this is the hex value of the height. For transaction fees coins it is the height of the block hashed twice.
 - Signature - Can be used to prove the authenticity of the coin.
 
+# [Chialisp](./Chialisp.md)
+# [Coloured Coins](./Coloured-Coins.md)

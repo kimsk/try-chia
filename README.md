@@ -7,14 +7,17 @@
 # Securities
 - [Securing Your Chia - How to Be a Hard Target](https://www.chia.net/2021/05/28/securing-your-chia-how-to-be-a-hard-target.en.html)
 
+# CLI
+- [CLI Commands Reference](https://github.com/Chia-Network/chia-blockchain/wiki/CLI-Commands-Reference)
+- [All CLI commands for Chia Network with an explanation](https://www.lautenbacher.ch/en/crypto-en/all-cli-commands-for-chia-network-with-an-explanation/)
+
 # Chialisp
 - [Official](https://chialisp.com/)
 - [Gene Hoffman Jr's playlist](https://www.youtube.com/playlist?list=PLmnzWPUjpmaGfSqkDH7qkWwbVYPqzjgIx)
     - [An Introduction to developing in Chialisp](https://www.youtube.com/watch?v=dEFLJSU87K8)
     - [Chia Coloured Coins - A Non-technical User Guide](https://www.youtube.com/watch?v=YOlpmCBK8zY)
-
 - [Decentralized Identity in ChiaLisp - A Talk with Urbana-Champaign Blockchain Group (17/07/20)](https://www.youtube.com/watch?v=cee9O4ZEPjo)
-- [Chia Wallets](https://github.com/Chia-Network/wallets)
+- ~~[Chia Wallets](https://github.com/Chia-Network/wallets)~~ (obsolete)
 
 # Farming (Plotting + Harvesting)
 - [Chia plotting basics](https://www.chia.net/2021/02/22/plotting-basics.html)

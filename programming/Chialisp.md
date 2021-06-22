@@ -75,3 +75,10 @@ $ brun '(f (r 1))' '("hello" 0xdeadbeef)'
 
 0xdeadbeef
 ```
+
+# Misc
+- [Why is Chialisp superior to other on-chain programming solutions?](https://www.youtube.com/watch?v=2uvlop-hlio&t=3358s)
+
+# Dev
+- [chia-blockchain/chia/wallet/puzzles/](https://github.com/Chia-Network/chia-blockchain/tree/main/chia/wallet/puzzles)
+- [Quexington/chialisp_dev_utility](https://github.com/Quexington/chialisp_dev_utility)

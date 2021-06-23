@@ -1,7 +1,11 @@
 # [An Introduction to developing in Chialisp](https://www.youtube.com/watch?v=dEFLJSU87K8)
 # [On-Chain Programming](https://www.youtube.com/watch?v=9P0vaux2h6o&t=584s) 
 ## UTXO (Unspent Transaction Output)
+- [Unspent Transaction Output (UTXO) - binance](https://academy.binance.com/en/glossary/unspent-transaction-output-utxo)
 - [UTXO (Unspent Transaction Output) and Account Model Comparison v. 2](https://medium.com/hackernoon/utxo-and-account-model-comparison-v-2-cdf9669c6c0d)
+
+> cryptocurrency transactions are made of inputs and outputs. Anytime a transaction is made, a user takes one or more UTXOs to serve as the input(s). Next, the user provides their digital signature to confirm ownership over the inputs, which finally result in outputs. The UTXOs consumed are now considered "spent," and can no longer be used. Meanwhile, the outputs from the transaction become new UTXOs – which can be spent in a new transaction later.
+
 
 ## [Chia coins](https://www.chiaexplorer.com/chia-coins)
 Coins are locked by a **puzzle**, which is a program written in CLVM that takes an input solution.

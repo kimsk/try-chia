@@ -7,6 +7,26 @@ CLVM is the compiled, minimal version of ChiaLisp.
 
 - [Decentralized Identity in ChiaLisp - A Talk with Urbana-Champaign Blockchain Group (17/07/20)](https://youtu.be/cee9O4ZEPjo)
 - [ChiaLisp - what is it good for?](https://www.reddit.com/r/chia/comments/mkbx74/chialisp_what_is_it_good_for/?utm_source=share&utm_medium=web2x&context=3)
+- [Chia Founder Bram AMA zoom meeting with Chia China #1 Group(CCG)](https://www.youtube.com/watch?v=ujwSdIkKDZ8)
+
+> Lisp principles turns out to be the good fit for on-chain programming. You need sanboxing to prevent a smart coin to be able to update states outside of it. Lisp has no side-effect of any kind in a language. Lisp is also simple, few operations, easy to audit. 
+
+[metaprogramming](https://youtu.be/2BvIKuohK6I?t=235)
+> Advance Chia coin's functionalities requires language to be able to understand itself (i.e., Metaprogramming, eval). The language needs to be able to talk about itself. It needs to be possible to take code snippet of itself, hash them, and/or execute them like doing `eval` constantly. In a language without side-effect, it's reasonably thing to do `eval`.
+
+> Also, UTXO model persists data and state only in coins. State transitions happen only when coines are spent and created. Once the transitions are done, ephermeral disappears.  
+
+> Everything is a coin, so coins have high interoperatability. (Backward pointing covenants?)
+
+> In any given block everything happens simultaneously. There is no ordering of transactions within the block. Farmer can't play around with order of transactions.
+
+> CLVM is not limited to Chialisp as new language that can be compiled to CLVM can be created.
+
+> Chialisp is high-level and has functions, macros, etc.
+
+> The model of thinking is state is in the coin, and the new state is created when the coin is created. No side-effect!
+
+> The standard format transaction supports Taproot & Graftroot
 
 ## [CLVM Basics](https://chialisp.com/docs/)
 

@@ -5,6 +5,24 @@ CLVM is the compiled, minimal version of ChiaLisp.
 # [ChiaLisp](https://chialisp.com/)
 > The high level language is a superset of clvm, adding several operators.
 
+- [An Introduction to developing in Chialisp](https://www.youtube.com/watch?v=dEFLJSU87K8)
+### How does Chialisp relate to the Blockchain?
+- A puzzle is a chialisp program that is stored inside of a coin
+- A spend is when a puzzle is evaluated with a valid solution.
+- When you run the program it will either fail immediately or return some conditions to the network.
+- If those conditions are met, then the spend is valid.
+
+### Solutions and Variables
+- As a functional language, there are no variables, but we can pass information to a program through the solution.
+- A solution is a list of values which can be accessed as part of an evaluation.
+
+### Spends
+- A coin is a tuple of (parent ID, a hash of its puzzle, amount)
+- A coin's ID is the hash of the above
+- A spend specifies a coin ID, reveals the full code of its puzzle, presents a solution, and there's also an aggregated signature
+- Anybody can attempt to spend a coin, the aggregated signature opcode enforces ownership
+
+
 - [Decentralized Identity in ChiaLisp - A Talk with Urbana-Champaign Blockchain Group (17/07/20)](https://youtu.be/cee9O4ZEPjo)
 - [ChiaLisp - what is it good for?](https://www.reddit.com/r/chia/comments/mkbx74/chialisp_what_is_it_good_for/?utm_source=share&utm_medium=web2x&context=3)
 - [Chia Founder Bram AMA zoom meeting with Chia China #1 Group(CCG)](https://www.youtube.com/watch?v=ujwSdIkKDZ8)

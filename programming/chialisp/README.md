@@ -22,6 +22,22 @@ CLVM is the compiled, minimal version of ChiaLisp.
 - A spend specifies a coin ID, reveals the full code of its puzzle, presents a solution, and there's also an aggregated signature
 - Anybody can attempt to spend a coin, the aggregated signature opcode enforces ownership
 
+> To 'send a coin to somebody' you simply create a puzzle that requires the recipient's signature, but then allows them to return any other OpCodes that they like.
+
+### Wallets
+A wallet is some software that has several features that make it easy for a user to interact with coins.
+
+- A wallet keeps track of public and private keys
+- A wallet can generate puzzles and solutions
+- A wallet can sign things with its keys
+- A wallet can identify and remember what coins that the user 'owns'
+- A wallet can spend coins
+
+> all wallets already know and agree on what the standard format for sending a coin to somebody is. They know what their own pubkeys are, so when a new coin is created a wallet can check if the puzzle inside that coin is a 'standard send puzzle' to one of their pubkeys. If it is, then that coin can be considered to be owned by that 'wallet' as nobody else can spend it.
+
+### Coin ownership
+Coin ownership refers to the concept of creating a coin with a puzzle that means it can only be spent when signed by the private key of the coin's "owner". The goal of wallet software is to generate, interpret and manage these kinds of coins and puzzles.
+
 ### Smart Transactions
 
 - Smart Transactions: Applications & Use Cases

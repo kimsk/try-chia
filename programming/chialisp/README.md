@@ -22,6 +22,35 @@ CLVM is the compiled, minimal version of ChiaLisp.
 - A spend specifies a coin ID, reveals the full code of its puzzle, presents a solution, and there's also an aggregated signature
 - Anybody can attempt to spend a coin, the aggregated signature opcode enforces ownership
 
+### Smart Transactions
+
+- Smart Transactions: Applications & Use Cases
+- Multisig: Green Address, Base Zero
+- Atomic Swap: Non-custodial exchanges, payment channels, cross-chain trades
+- Authorized Payee Whitelist: Prevent embezzing, internal controls
+- Withdrawal Recover Escrow Wallet: Allows a user to detect attemps at unauthorized withdrawals and get the money back
+- Withdrawal Rate Limit Wallet: Allows specified employees to spend a certain amount of money per day without approval
+- Backup Recovery Key: If a user loses their credentials, the backup recovery key will help them recover their accounts, BTC and ETH have no built-in method of account recovery with an estimated 12-22% of BTC's lost forever
+- Colored Coins: Allow issuance of tokens on Chia's blockchain benefiting from the custody and clearing tools available for all smart transactions. Like ERC-20 tokens but better
+- Identity Wallet: Create decentralized identifier (DID) and add verifiable credentials to e.g. log in, show completion of KYC/AML, or serve as a digital passport. This wallet will have multi-level delagated recovery features.
+- Payment Channels: Allows for near instant payments and vastly reduced on-chain transaction load for scaling and reducing costs.
+
+### Q & A
+- Chialisp is designed to be audit-first language
+- Chialisp program won't rely on external data (no side-effect)
+- Focus on
+    - Custodial Arrangement (e.g., BTC's multisig)
+    - Chia's Coloured Coins 
+        - Support inner smart transaction (more than ETH)
+        - Atomic swap one coloured to another (market making can be done without trusted party)
+        - Similar to Omni protocol
+            - There is a chia coin for every coloured coin
+            - Unlike Omni protocol, it can self enforce the coloured coin rule (don't need full node)
+    - Digital Identity
+- Only side-effect can be done, is coin can be spent and created.
+- Simplify UTXO model (simpler than BTC)
+- Chialisp allows self-reference programing tricks (e.g., eval, allows covenants)
+
 
 - [Decentralized Identity in ChiaLisp - A Talk with Urbana-Champaign Blockchain Group (17/07/20)](https://youtu.be/cee9O4ZEPjo)
 - [ChiaLisp - what is it good for?](https://www.reddit.com/r/chia/comments/mkbx74/chialisp_what_is_it_good_for/?utm_source=share&utm_medium=web2x&context=3)

@@ -1,5 +1,13 @@
 (mod (INDEX)
-    (defun factorial (VALUE) (if (= VALUE 1) 1 (* VALUE (factorial (- VALUE 1)))))
+    ; function definition
+    (defun factorial (VALUE)
+        (if (= VALUE 1)
+            1
+            (* VALUE (factorial (- VALUE 1)))
+        )
+    )
+
+    ; main
     (factorial INDEX)
 )
 

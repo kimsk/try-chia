@@ -1,0 +1,22 @@
+(mod args
+
+  (defmacro square (input)
+    (qq (* (unquote input) (unquote input)))
+  )
+
+  (defun sqre_list (my_list)
+    (if my_list
+      (c (square (f my_list)) (sqre_list (r my_list)))
+      my_list
+    )
+  )
+
+  (sqre_list args)
+)
+
+; brun "`run square.clvm`" '(10 9 8 7)'
+
+;run square.clvm
+;(a (q 2 2 (c 2 (c 3 ()))) (c (q 2 (i 5 (q 4 (* 9 9) (a 2 (c 2 (c 13 ())))) (q . 5)) 1) 1))
+;brun '(a (q 2 2 (c 2 (c 3 ()))) (c (q 2 (i 5 (q 4 (* 9 9) (a 2 (c 2 (c 13 ())))) (q . 5)) 1) 1))' '(10 9 8 7)'
+;(100 81 64 49)

@@ -1,0 +1,12 @@
+(mod
+    (input)
+
+    (defun len (i list)
+        (if list
+            (len (+ i 1) (r list))
+            i
+        )
+    )
+    (len 0 input)
+)
+;brun "`run len.clvm`" '(("hello" 2 3))'

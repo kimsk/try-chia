@@ -1,22 +1,23 @@
 (mod
     (input)
 
-    (defun len (i list)
+    (defun len (list)
         (if list
-            (len (+ i 1) (r list))
-            i
+            (+ 1 (len (r list)))
+            0
         )
     )
     (if input
-        (len 0 input)
+        (len input)
         (list
-            (len 0 0)
-            (len 0 (list "a"))
-            (len 0 (list "a" "b" "c"))
-            (len 0 (list 1 2 (list 3)))
+            (len 0)
+            (len (list "a"))
+            (len (list "a" "b" "c"))
+            (len (list 1 2 (list 3)))
         )
     )
 )
 ;brun "`run len.clvm`" '(("hello" 2 3))'
 ;3
 ;brun "`run len.clvm`" '(())'
+;(() 1 3 3)

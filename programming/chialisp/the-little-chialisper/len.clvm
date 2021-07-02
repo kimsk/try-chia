@@ -7,6 +7,16 @@
             i
         )
     )
-    (len 0 input)
+    (if input
+        (len 0 input)
+        (list
+            (len 0 0)
+            (len 0 (list "a"))
+            (len 0 (list "a" "b" "c"))
+            (len 0 (list 1 2 (list 3)))
+        )
+    )
 )
 ;brun "`run len.clvm`" '(("hello" 2 3))'
+;3
+;brun "`run len.clvm`" '(())'

@@ -91,3 +91,4 @@ curl --insecure --cert ~/.chia/testnet7/config/ssl/wallet/private_wallet.crt \
 }
 ```
 
+curl --cert ~/.chia/testnet7/config/ssl/wallet/private_wallet.crt --key ~/.chia/testnet7/config/ssl/wallet/private_wallet.key -d '{"wallet_id": 1}' -H "Content-Type: application/json" -X POST https://localhost:9256/get_transactions

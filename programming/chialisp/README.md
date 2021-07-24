@@ -6,6 +6,8 @@ CLVM is the compiled, minimal version of ChiaLisp.
 > The high level language is a superset of clvm, adding several operators.
 
 - [An Introduction to developing in Chialisp](https://www.youtube.com/watch?v=dEFLJSU87K8)
+- [Chialisp - Create and spend password protected coin from CLI](https://www.youtube.com/watch?v=NJydOPMLxBg)
+
 ### How does Chialisp relate to the Blockchain?
 - A puzzle is a chialisp program that is stored inside of a coin
 - A spend is when a puzzle is evaluated with a valid solution.

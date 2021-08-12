@@ -1,0 +1,21 @@
+(mod ()
+    (include int_to_str.clvm)
+    (include countdown.clvm)
+    (defun full_nodes_on_the_net (n)
+        (if (= 0 n)
+            "no node on the net!"
+            (concat 
+                (int_to_str n) " nodes on the net. Go out of town, your server goes down, "
+                (full_nodes_on_the_net (decr n))
+            )
+        )
+    )
+    (concat
+        (int_to_str 99) " full nodes on the net, "
+        (full_nodes_on_the_net 99)
+    )
+    ;; (concat (int_to_str 99) " full nodes on the net, " (int_to_str 99)
+    ;;     " nodes on the net. Go out of town, your server goes down, " (int_to_str 98)
+    ;;     " full nodes on the net."
+    ;; )
+)

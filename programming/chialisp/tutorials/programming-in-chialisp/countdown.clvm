@@ -1,0 +1,11 @@
+(
+    ;; mod ()
+    (defun decr (n) (- n 1))
+    (defun countdown (n)
+        (if (= n 0)
+            ()
+            (c n (countdown (decr n)))
+        )
+    )
+    ;; (countdown 99)
+)

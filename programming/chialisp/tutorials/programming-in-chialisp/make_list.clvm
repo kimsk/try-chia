@@ -1,0 +1,4 @@
+(mod ()
+    (defun join_two (a b) (c a (c b ())))
+    (join_two 100 200)
+)

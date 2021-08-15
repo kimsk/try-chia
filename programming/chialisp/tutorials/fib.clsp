@@ -1,0 +1,10 @@
+(mod (N)
+    (defun fib (N)
+        (if (> 2 N)
+            1
+            (* (fib (- N 1)) N)
+        )
+    )
+    (fib N)
+)
+; this is actually factorial ;-)

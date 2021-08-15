@@ -22,6 +22,7 @@
 - [All CLI commands for Chia Network with an explanation](https://www.lautenbacher.ch/en/crypto-en/all-cli-commands-for-chia-network-with-an-explanation/)
 
 # Chialisp
+- [Training](https://chialisp.com/training/)
 - [Official](https://chialisp.com/)
 - [Gene Hoffman Jr's playlist](https://www.youtube.com/playlist?list=PLmnzWPUjpmaGfSqkDH7qkWwbVYPqzjgIx)
     - [An Introduction to developing in Chialisp](https://www.youtube.com/watch?v=dEFLJSU87K8)

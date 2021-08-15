@@ -146,3 +146,6 @@ As for puzzle hashes, the algorithm is described here: https://chialisp.com/docs
 Chialisp can do uniswap much better than other chains. Bram has a blog post coming shortly. 
 
 Coin has only puzzle hash stored there so when
+
+
+[Persist state via puzzle hash- August 6 - AMA](https://youtu.be/QiSW5t8vzPc?t=1977)

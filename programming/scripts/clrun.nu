@@ -7,7 +7,15 @@ def clrun [
     if ($solution == '') { 
         [["clsp" "clvm"]; [$clsp $clvm]];
     } {
-        let output = (brun $clvm $solution)
-        [["clsp" "clvm" "solution" "output"]; [$clsp $clvm $solution $output]];
+        let output = (brun $clvm $solution -c);
+        [
+            ["clsp" "clvm" "solution" "output" "cost"]; 
+            [   $clsp
+                $clvm
+                $solution
+                ($output | lines | nth 1)
+                ($output | lines | nth 0 | str substring '7,' )
+            ]
+        ];
     };
 }

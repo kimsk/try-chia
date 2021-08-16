@@ -1,6 +1,7 @@
 (mod
     (list1 list2)
 
+    ; https://chialisp.com/docs/common_functions#sha256tree1
     (defun sha256tree1
         (TREE)
         (if (l TREE)

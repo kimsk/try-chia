@@ -15,6 +15,22 @@ Beginning compilation of addition.clsp...
 (+ 2 5)
 ```
 
+> `(+ 2 5)` is not `5 + 2`, `2` and `5` are [argument numbering](https://chialisp.com/docs/ref/clvm#illustration-of-argument-numbering). So `2` is `(f 1)` and `5` is `(f (r 1))`. `1` is the whole solution.
+
+```sh
+❯ brun '(f 1)' '(100 12)'
+100
+
+❯ brun '2' '(100 12)'
+100
+
+❯ brun '(f (r 1))' '(100 12)'
+12
+
+❯ brun '5' '(100 12)'
+12
+```
+
 ## run with solution
 ```sh
 ❯ brun (cdv clsp disassemble ./addition.clsp.hex) '(100 12)'

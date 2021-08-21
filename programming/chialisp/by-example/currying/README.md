@@ -1,5 +1,4 @@
-# addition.clsp
-
+# [Currying](https://chialisp.com/docs/common_functions#currying)
 ## code
 ```lisp
 (mod (x y) (+ x y))
@@ -15,7 +14,7 @@ Beginning compilation of addition.clsp...
 (+ 2 5)
 ```
 
-> `(+ 2 5)` is not `5 + 2`, `2` and `5` are [argument numbering](https://chialisp.com/docs/ref/clvm#illustration-of-argument-numbering). So `2` is `(f 1)` and `5` is `(f (r 1))`. `1` is the whole solution.
+> `(+ 2 5)` is not `7`. Here, `2` and `5` are [argument numbering](https://chialisp.com/docs/ref/clvm#illustration-of-argument-numbering). So `2` is `(f 1)` and `5` is `(f (r 1))` while `1` is the whole solution. This is how we can pull specific value from arguments with help from chialisp compiler.
 
 ```sh
 ❯ brun '(f 1)' '(100 12)'

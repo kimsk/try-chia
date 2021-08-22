@@ -1,0 +1,3 @@
+(mod (parent_id puzzlehash amount)
+    (sha256 parent_id puzzlehash amount)
+)

@@ -1,0 +1,17 @@
+(mod (inner_puzzle inner_solution)
+    (defun map (puzzle values)
+        (if (l values)
+            (c (a puzzle (f values)) (map puzzle (r values)))
+            values
+        )
+    )
+    (map inner_puzzle inner_solution)
+)
+
+; ❯ brun (run ./map.clsp) "($(run ./add-99.clsp) (1 1))"
+
+; (100 100
+
+; ❯ brun (run ./map.clsp) "($(run ./create-list.clsp) (1000 2000))"    
+
+; ((1000 3000 4000) (2000 3000 4000))

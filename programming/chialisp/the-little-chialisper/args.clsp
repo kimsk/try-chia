@@ -1,0 +1,7 @@
+(mod (arg1 arg2 arg3)
+    (list arg1 arg3 arg2)
+)
+
+; ❯ run ./args.clsp
+
+; (c 2 (c 11 (c 5 ())))

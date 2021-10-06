@@ -1,0 +1,9 @@
+(mod list
+    (defun sum (values)
+        (if (l values)
+            (+ (f values) (sum (r values)))
+            0
+        )
+    )
+    (sum list)
+)

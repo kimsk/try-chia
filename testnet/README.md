@@ -17,6 +17,8 @@ chia wallet show
 # Testnet7
 - [faucet](https://chia-faucet.com)
 - [testnet7 is not scyned](https://github.com/Chia-Network/chia-blockchain/issues/4404)
+- [testnet7 db](https://download.chia.net/testnet7/blockchain_v1_testnet7.sqlite)
+
 
 ``` sh
 export CHIA_ROOT="~/.chia/testnet7"

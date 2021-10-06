@@ -1,0 +1,12 @@
+(mod values
+    (defun map (v)
+        (if (l v)
+            (c (+ (f v) 20) (map (r v)))
+            v
+        )
+    )
+    (map values)
+)
+; ❯ brun (run ./map.clsp) '(101 101)'
+
+; (121 121)

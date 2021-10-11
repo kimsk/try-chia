@@ -46,5 +46,11 @@
 - [Chia Forum](https://chiaforum.com/)
 - [Reddit](https://www.reddit.com/r/chia/)
 
+# Watched Projects
+- [prozacchiwawa/chia-checkers](https://github.com/prozacchiwawa/chia-checkers)
+- [LukasGrudtner/chia-automated-market-maker](https://github.com/LukasGrudtner/chia-automated-market-maker)
+- [BrandtH22/Rhizosphere](https://github.com/BrandtH22/Rhizosphere)
+- [danieljperry/LeaveALegacy](https://github.com/danieljperry/LeaveALegacy)
+
 # Misc
 - [ChiaLinks](https://chialinks.com/)

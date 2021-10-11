@@ -47,10 +47,11 @@
 - [Reddit](https://www.reddit.com/r/chia/)
 
 # Watched Projects
-- [prozacchiwawa/chia-checkers](https://github.com/prozacchiwawa/chia-checkers)
 - [LukasGrudtner/chia-automated-market-maker](https://github.com/LukasGrudtner/chia-automated-market-maker)
-- [BrandtH22/Rhizosphere](https://github.com/BrandtH22/Rhizosphere)
+- [prozacchiwawa/chia-checkers](https://github.com/prozacchiwawa/chia-checkers)
+- [prozacchiwawa/clvm_tools_rs](https://github.com/prozacchiwawa/clvm_tools_rs)
 - [danieljperry/LeaveALegacy](https://github.com/danieljperry/LeaveALegacy)
+- [BrandtH22/Rhizosphere](https://github.com/BrandtH22/Rhizosphere)
 
 # Misc
 - [ChiaLinks](https://chialinks.com/)

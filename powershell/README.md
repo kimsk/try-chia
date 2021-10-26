@@ -1,0 +1,1 @@
+- [Powershell: Building a Module, one microstep at a time](https://powershellexplained.com/2017-05-27-Powershell-module-building-basics/)

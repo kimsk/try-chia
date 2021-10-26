@@ -49,9 +49,9 @@
 # Watched Projects
 - [LukasGrudtner/chia-automated-market-maker](https://github.com/LukasGrudtner/chia-automated-market-maker)
 - [prozacchiwawa/chia-checkers](https://github.com/prozacchiwawa/chia-checkers)
+- [Chia-Mine/clvm_tools-js/](https://github.com/Chia-Mine/clvm_tools-js/)
 - [prozacchiwawa/clvm_tools_rs](https://github.com/prozacchiwawa/clvm_tools_rs)
 - [danieljperry/LeaveALegacy](https://github.com/danieljperry/LeaveALegacy)
 - [BrandtH22/Rhizosphere](https://github.com/BrandtH22/Rhizosphere)
-
 # Misc
 - [ChiaLinks](https://chialinks.com/)

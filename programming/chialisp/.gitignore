@@ -1,2 +1,3 @@
 main.sym
 *.clsp.hex
+__pycache__

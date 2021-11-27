@@ -54,6 +54,8 @@
 - [danieljperry/LeaveALegacy](https://github.com/danieljperry/LeaveALegacy)
 - [BrandtH22/Rhizosphere](https://github.com/BrandtH22/Rhizosphere)
 - [Writing My First Chia Blockchain Program](https://levelup.gitconnected.com/writing-my-first-chia-blockchain-program-part-1-introduction-a10cd8eddece)
+- [geraldneale/blink_mojo](https://github.com/geraldneale/blink_mojo)
 
 # Misc
 - [ChiaLinks](https://chialinks.com/)
+- [Mojo Puzzler](https://mojopuzzler.org/mediawiki/index.php/Main_Page)

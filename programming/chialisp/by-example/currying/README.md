@@ -45,6 +45,20 @@ Beginning compilation of addition.clsp...
 (a (q 16 2 5) (c (q . 100) 1))
 ```
 
+The puzzle is `(q 16 2 5)` which is the same as before `(+ 2 5)`.
+
+```sh
+❯ brun '(q 16 2 5)'
+(+ 2 5)
+```
+
+The new solution is `(c (q . 100) 1)`.
+
+```sh
+❯ brun '(c (q . 100) 1)' '(12)'
+(100 12)
+```
+
 ## run by provide `y` only
 ```sh
 ❯ cdv clsp curry ./addition.clsp.hex -a 100

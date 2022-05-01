@@ -20,6 +20,8 @@ function Get-Spend-Bundles
     $blokspends
 }
 
+Get-Spend-Bundles -Puzzle_Hash dfa1bf8b5e100c5b4ebe22f8f534a4d844dfff26eb74cb24809df8c86e78ab82
+
 $blockspends = Get-Spend-Bundles -Puzzle_Hash b92a9d42c0f3e3612e98e1ae7b030ed425e076eda6238c7df3c481bf13de3bfd
 cdv clsp disassemble $blockspends[0].puzzle_reveal
 $blockspends | % { cdv clsp disassemble $_.solution }

@@ -107,3 +107,7 @@ $coins `
     | Select-Object @{n='id';e ={$_.name}}`
     , @{n='puzzle hash';e={$_.value.coin.puzzle_hash}}`
     , @{n='amount'; e={$_.value.coin.amount}}}
+
+
+$keys = [regex]::Matches((cdv inspect keys --random), "Secret Key: (?<SecretKey>.*)\sPublic Key: (?<PublicKey>.*)")
+$keys[0].Groups['SecretKey'].Value

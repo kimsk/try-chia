@@ -1,0 +1,6 @@
+- [BLS digital signature](https://en.wikipedia.org/wiki/BLS_digital_signature)
+- [What are BLS Signatures?](https://aggsig.me/signatures.html)
+- [Pairings for beginners](https://www.craigcostello.com.au/s/PairingsForBeginners.pdf)
+- [AugSchemeMPL](https://github.com/Chia-Network/bls-signatures/blob/main/python-impl/schemes.py#L106)
+- [PrivateKey](https://github.com/Chia-Network/bls-signatures/blob/main/python-impl/private_key.py#L7)
+- [JacobianPoint](https://github.com/Chia-Network/bls-signatures/blob/main/python-impl/ec.py#L120)

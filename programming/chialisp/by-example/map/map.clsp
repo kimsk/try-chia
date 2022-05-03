@@ -10,7 +10,7 @@
 
 ; ❯ brun (run ./map.clsp) "($(run ./add-99.clsp) (1 1))"
 
-; (100 100
+; (100 100)
 
 ; ❯ brun (run ./map.clsp) "($(run ./create-list.clsp) (1000 2000))"    
 

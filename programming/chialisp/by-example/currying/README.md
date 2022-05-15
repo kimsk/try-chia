@@ -67,3 +67,13 @@ The new solution is `(c (q . 100) 1)`.
 ❯ brun (cdv clsp curry ./addition.clsp.hex -a 100) '(12)'
 112
 ```
+
+## curry in the puzzle
+```sh
+❯ cdv clsp curry main.clsp.hex -a '(+ 2 5)'
+(a (q 2 2 5) (c (q 16 2 5) 1))
+
+chialisp/by-example/currying on  main [✘!?] via 🐍 v3.8.10
+❯ brun '(a (q 2 2 5) (c (q 16 2 5) 1))' '((100 12))'
+112
+```

@@ -14,3 +14,7 @@
 python -m cProfile ./coin_ids.py > 1.5.0-cProfile.log
 ```
 
+# Python tricks
+- [The Fastest Way to Loop in Python - An Unfortunate Truth](https://www.youtube.com/watch?v=Qgevy75co8c)
+- [You should put this in all your Python scripts | if __name__ == '__main__': ...](https://www.youtube.com/watch?v=g_wlZ9IhbTs)
+
